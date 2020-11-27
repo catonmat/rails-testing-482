@@ -1,0 +1,13 @@
+# skello:
+#   name: 'skello'
+#   tagline: 'Manage your staff'
+
+# roadstr:
+#   name: 'roadstr'
+#   tagline: 'Rent a vintage car'
+
+<% 1.upto(5) do |i| %>
+id_<%= i %>:
+  name: <%= Faker::Company.name %>
+  tagline: <%= Faker::Company.catch_phrase %>
+<% end %>
